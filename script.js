@@ -31,3 +31,14 @@ $(document).ready(function(){
       ]
     });
   });
+
+const container = document.querySelector('.header');
+const scrollPosition = 30; 
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > scrollPosition) {
+    container.classList.add('act');
+  } else {
+    container.classList.remove('act');
+  }
+});
