@@ -177,7 +177,17 @@ nav button {
 }
 
 .mais1 img {
-    width: 60%;
+    width: 90%;
+    border: 5px solid #005000;
+    border-radius: 10px;
+}
+
+.mais1 button{
+    position: absolute;
+    right: 10%;
+    width: 100px;   
+    background-color: #005000;
+    border-radius: 10px;
 }
 
 #historia {
