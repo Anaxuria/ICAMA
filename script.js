@@ -10,7 +10,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.slick-carousel2').slick({
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 5000,
       arrows: false,
