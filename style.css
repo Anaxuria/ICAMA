@@ -421,6 +421,13 @@ footer div {
 footer a {
     color: #52d052;
     font-size: 1.25rem;
+    text-decoration: none;
+
+    transition: .2s;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer h3 {
@@ -450,7 +457,7 @@ footer button {
     transition: 0.2s;
 }
 
-footer button:hover, .button:hover {
+footer button:hover {
     background: transparent;
     color: #ebffe6;
     border: 2px solid #ebffe6;
