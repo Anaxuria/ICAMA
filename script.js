@@ -42,3 +42,14 @@ window.addEventListener('scroll', () => {
     container.classList.remove('act');
   }
 });
+
+const ret = document.querySelector('.button-return');
+const scrollPositionRet = 700; 
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > scrollPositionRet) {
+    ret.classList.add('menu');
+  } else {
+    ret.classList.remove('menu');
+  }
+});

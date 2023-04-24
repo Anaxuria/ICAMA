@@ -16,3 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    var ret = document.querySelectorAll('.button-return')
+    function scrollTo(element) {
+        element = document.getElementById(element)
+        window.scroll({
+            behavior: "smooth",
+            left: 0,
+            top: element.offsetTop - 100
+        })
+    }
+
+    ret.forEach( ret => {
+        ret.addEventListener('click', e => {
+            let attributeReturn = e.target.closest('.button-return').getAttribute('data-id');
+            scrollTo(attributeReturn);
+        })
+    })
+})
