@@ -44,7 +44,7 @@ window.addEventListener('scroll', () => {
 });
 
 const ret = document.querySelector('.button-return');
-const scrollPositionRet = 700; 
+const scrollPositionRet = 530; 
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > scrollPositionRet) {
