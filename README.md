@@ -3,7 +3,7 @@
 <p align="center"> <a href="https://www.instagram.com/icama_org/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="insta-icama"></a> </p>
 
 <p align="center">
-<a href="#tec">Tecnologias </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="#pro"> Projeto </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="equi"> Equipe </a> 
+<a href="#tec">Tecnologias </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="#pro"> Projeto </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="#equi"> Equipe </a> 
 </p>
 
 <br>
