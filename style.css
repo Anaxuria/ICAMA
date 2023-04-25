@@ -43,6 +43,7 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    box-shadow: 0 0 15px black;
     transition: 0.2s;
 }
 
@@ -502,12 +503,62 @@ footer button:hover {
 
     /*header*/
 
+    .header {
+        height: 100px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header h2 {
+        font-size: 1.5rem;
+    }
+
+    .header div {
+        gap: 8px;
+    }
+
+    .header div i {
+        font-size: 1.5rem;
+    }
+
+    .header i {
+        font-size: 1.5rem;
+    }
+
     .header a span {
         display: none;
     }
 
+    .header button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
     .header button i {
         display: none;
+    }
+
+    .header.act {
+        background: #ffffff;
+        filter:opacity(0.9), blur(0.9);
+        transition: 0.2s;
+
+        height: 100px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 15px black;
+    }
+    
+    .header.act div {
+        gap: 8px;
+    }
+    
+    .header.act div i {
+        font-size: 1.5rem;
     }
 
     nav {
@@ -517,6 +568,10 @@ footer button:hover {
 
     /*menu*/
 
+    .menu {
+        height: 630px;
+    }
+
     .titulo h2 {
         font-size: 2rem;
         font-family: 'Secular One', sans-serif;
@@ -524,7 +579,7 @@ footer button:hover {
     }
     
     .titulo h1 {
-        font-size: 6rem;
+        font-size: 5rem;
         color: #005000;
         font-family: 'Rowdies', sans-serif;
     }
@@ -611,7 +666,7 @@ footer button:hover {
     
     
     #projetos {
-        max-width: 1200px;
+        max-width: 400px;
         height: 700px;
         margin: 0 auto;
         border-bottom: 2px solid #005000;
