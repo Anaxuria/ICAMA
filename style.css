@@ -148,8 +148,6 @@ nav button:hover {
     cursor: pointer;
 }
 
-
-
 .menu {
     max-width: 1500px;
     height: 650px;
@@ -254,7 +252,7 @@ nav button:hover {
     text-align: center;
 }
 
-#sobre, #historia{
+#sobre, #historia, #loja{
     display: flex;
     justify-content: space-around;
 }
@@ -263,6 +261,10 @@ nav button:hover {
     width: 35%;
     border: 5px solid #005000;
     border-radius: 99999px;
+}
+
+#loja img {
+    width: 35%;
 }
 
 
@@ -286,6 +288,11 @@ nav button:hover {
     background: transparent;
     color: #005000;
     border: 2px solid #005000;
+}
+
+.video {
+    width: 560px;
+    height:315px;
 }
 
 #projetos {
@@ -487,4 +494,293 @@ footer button:hover {
     background: transparent;
     color: #ebffe6;
     border: 2px solid #ebffe6;
+}
+
+/*Mobile*/
+
+@media (max-width: 570px) {
+
+    /*header*/
+
+    .header a span {
+        display: none;
+    }
+
+    .header button i {
+        display: none;
+    }
+
+    nav {
+        gap: 10px;
+        font-size: 1.75rem;
+    }
+
+    /*menu*/
+
+    .titulo h2 {
+        font-size: 2rem;
+        font-family: 'Secular One', sans-serif;
+        text-align: center;
+    }
+    
+    .titulo h1 {
+        font-size: 6rem;
+        color: #005000;
+        font-family: 'Rowdies', sans-serif;
+    }
+    
+    .slider {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    
+    .slick-slide img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin: 0 auto;
+        border-radius: 30px;
+        border: 3px solid #005000;
+        cursor: pointer;
+      }
+    
+    .slick-carousel2 {
+        max-width: 400px;
+        margin: 30px auto;
+        align-content: center;
+    }
+    
+    .option2 {
+        text-align: center; 
+        margin: 10px;
+    
+      }
+    .option2 img {
+        width: 250px;
+        height: 188px;
+        margin: 15px 0;
+        border-radius: 20px;
+        border: 3px solid #005000;
+        object-fit: cover;
+      }
+    
+      /*main*/
+
+     #historia, #loja {
+        max-width: 400px;
+        height: 800px;
+        margin: 0 auto;
+        border-bottom: 2px solid #005000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #sobre {
+        max-width: 500px;
+        height: 750px;
+        flex-direction: column;
+    }
+    
+    #sobre h2, #historia h2, #loja h2, #projetos h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #sobre img, #historia img {
+        width: 50%;
+    }
+    
+    #loja img {
+        width: 80%;
+    }
+    
+    .conteudo{
+        gap: 1rem;
+    }
+    
+    main button span {
+        display: none;
+    }
+
+    .video {
+        width: 260px;
+        height:155px;
+    }
+    
+    
+    #projetos {
+        max-width: 1200px;
+        height: 700px;
+        margin: 0 auto;
+        border-bottom: 2px solid #005000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #equipe {
+        max-width: 400px;
+        height: 600px;
+        margin: 30px auto;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "texto texto texto"
+        "foto1 foto2 foto3"
+        "foto4 span foto5"
+        "foto6 foto7 foto8";
+    }
+    
+    #equipe h2 {
+        font-family: 'Secular One', sans-serif;
+        font-size: 2.5rem;
+        color: #005000;
+    }
+    
+    .membro1 {
+        width: 100px;
+        grid-area: foto1;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .membro2 {
+        width: 100px;
+        grid-area: foto2;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .membro3 {
+        width: 100px;
+        grid-area: foto3;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .membro4 {
+        width: 100px;
+        grid-area: foto4;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .membro5 {
+        width: 100px;
+        grid-area: foto5;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .membro6 {
+        width: 100px;
+        grid-area: foto6;
+        align-self: center;
+        justify-self: center;
+    }
+    .membro7 {
+        width: 100px;
+        grid-area: foto7;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .membro8 {
+        width: 100px;
+        grid-area: foto8;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .equipe {
+        grid-area: texto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    #equipe img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        border: 3px solid #005000;
+    }
+    
+    #equipe figcaption {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 50px;
+        left: 39%; 
+        transform: translateX(-50%);
+        font-family: 'Secular One';
+        font-size: 1rem;
+        color: #067806;
+        text-shadow: 1px 1px 2px  black;
+        background: #ebffe6;
+        border-radius: 9999px;
+        max-width: 150px;
+        border: 3px solid #005000;
+    }
+    
+    footer {
+        max-width: 100%;
+        height: 400px;
+        background: linear-gradient(#005000, #005000, #002d00);
+        box-shadow: 0 2px 15px #000000;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        gap: 50px;
+        color: #ebffe6;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        gap: 5px;
+    }
+    
+    footer span {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    footer button {
+        max-width: 350px;
+        padding: 15px 20px;
+        background-color: #ebffe6;
+        color: #005000;
+        border: 2px solid #005000;
+        font-weight: bold;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 1.3rem;
+    
+        transition: 0.2s;
+    }
+    
+    footer button:hover {
+        background: transparent;
+        color: #ebffe6;
+        border: 2px solid #ebffe6;
+    }
 }
