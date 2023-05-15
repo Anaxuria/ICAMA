@@ -32,6 +32,7 @@ $(document).ready(function(){
     });
   });
 
+
 const container = document.querySelector('.header');
 const scrollPosition = 30; 
 
@@ -53,3 +54,12 @@ window.addEventListener('scroll', () => {
     ret.classList.remove('menu');
   }
 });
+
+//redirecionar paginas
+function redirecionarLoja() {
+  window.location.href = "pages/loja.html";
+}
+
+function redirecionarEquipe() {
+  window.location.href = "pages/equipe.html";
+}
