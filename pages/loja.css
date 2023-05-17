@@ -1,0 +1,287 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*scroll bar*/
+
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #219d5c;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #ebffe6;
+    border-radius: 20px;
+    border: 3px solid #219d5c;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, input, button, textarea {
+    font-size: 1rem;
+    color: black;
+} 
+
+body {
+    background: #ebffe6;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    color: #000;
+    background: #219d5ccc;
+    filter:opacity(0.9), blur(0.9);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 15px black;
+    transition: 0.2s;
+    z-index:999;
+}
+
+.header.act {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    color: #000;
+    background: #219d5c;
+    filter:opacity(0.9), blur(0.9);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 15px black;
+    transition: 0.2s;
+}
+
+.header div {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header.act div {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header div h2 {
+    font-family: 'Rowdies', sans-serif;
+}
+
+.header.act div h2 {
+    font-family: 'Rowdies', sans-serif;
+}
+
+.header div img {
+    width: 3.5rem;
+}
+
+.header.act div img {
+    font-size: 3.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav button {
+    padding: 10px 15px;
+    background: #ebffe6;
+    font-weight: bold;
+    color: #219d5c;
+    border-radius: 9999px;
+    border: 2px solid #129d5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 5px;
+    
+    transition: 0.2s;
+}
+
+nav button i {
+    font-size: 1.25rem;
+}
+
+nav button:hover {
+    background-color: transparent;
+    color: #ebffe6;
+    border: 2px solid #ebffe6;
+}
+
+.menu {
+    max-width: 1300px;
+    height: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h2 {
+    font-size: 2.5rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+.titulo h1 {
+    font-size: 6rem;
+    color: #219d5c;
+    font-family: 'Rowdies', sans-serif;
+}
+
+.conteudo{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.itens {
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+}
+
+.cardLoja {
+    width: 150px;
+    height: 150px;
+    filter: blur(.9);
+    background: linear-gradient(#ffffff30, #129d5c5e);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.itens a {
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid #129d5c5e;
+}
+
+.cardLoja span {
+    font-size: 1rem;
+    color: #000;
+    font-family: 'Secular One', sans-serif;
+}
+
+.itens:hover > a:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
+    transition: .2s;
+    z-index: 2;
+  }
+  .itens:hover > a:not(:hover) {
+    opacity: 0.5;
+    transition: .2s;
+  }
+
+  footer {
+    max-width: 100%;
+    height: 180px;
+    background: linear-gradient(#129d5c, #129d5c, #002d00);
+    box-shadow: 0 2px 15px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ebffe6;
+    padding: 30px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    gap: 5px;
+}
+
+footer a {
+    color: #000;
+    font-size: 1.25rem;
+    text-decoration: none;
+
+    transition: .2s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h3 {
+    font-family: 'Secular One';
+    color: #ebffe6;
+    font-size: 1.5rem;
+}
+
+footer span {
+    font-size: 1.25rem;
+}
+
+footer button {
+    max-width: 350px;
+    padding: 15px 20px;
+    background-color: #ebffe6;
+    color: #129d5c;
+    border: 2px solid #129d5c;
+    font-weight: bold;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1.3rem;
+
+    transition: 0.2s;
+}
+
+footer button:hover {
+    background: transparent;
+    color: #ebffe6;
+    border: 2px solid #ebffe6;
+}
