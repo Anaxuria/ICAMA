@@ -40,7 +40,7 @@ body {
     justify-content: space-between;
     padding: 20px 40px;
     color: #000;
-    background: #219d5ccc;
+    background: #219d5ccc; 
     filter:opacity(0.9), blur(0.9);
     position: -webkit-sticky;
     position: sticky;
@@ -219,7 +219,6 @@ nav button:hover {
   }
   .itens:hover > a:not(:hover) {
     opacity: 0.5;
-    transition: .2s;
   }
 
   footer {
