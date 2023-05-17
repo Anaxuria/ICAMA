@@ -64,21 +64,22 @@ function redirecionarEquipe() {
   window.location.href = "pages/equipe.html";
 }
 
+function redirecionarProjetos() {
+  window.location.href = "pages/projetos.html";
+}
+
 //toggles
 
 function togHis() {
   var element = document.getElementById("togHis");
 
-  element.classList.toggle("styleHis");
+  element.classList.toggle("styleTog");
   element.classList.toggle("styleNone");
 }
 
-//const togHis = document.querySelector("#togHis");
-//const classes = togHis.classList;
+function togSob() {
+  var element = document.getElementById("togSob");
 
-//togHis.addEventListener("click", () => {
-//  const result = classes.toggle("styleHis");
-//  togHis.textContent = `'styleHis' ${
-//    result ? "added" : "removed"
-//  }; classList is now "${classes}".`;
-//});
+  element.classList.toggle("styleTog");
+  element.classList.toggle("styleNone");
+}

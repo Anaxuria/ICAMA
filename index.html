@@ -47,21 +47,28 @@
         </div>
         <div class="mato"><i class="ph-light ph-tree"></i></div>
         <div id="sobre">
-            <div class="conteudo">
-              <h2>Sobre a nossa ONG</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, pariatur eaque! Quam laudantium repellat itaque natus unde maxime ratione aperiam ipsum cum repellendus aspernatur pariatur alias totam accusantium, odit hic!</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus porro esse cumque eius officiis tempore numquam cupiditate! Provident incidunt iste aperiam culpa? Atque incidunt sunt, quos rem repellat facere numquam.</p>
-              <button><i class="ph-bold ph-plus"></i> <span>Saiba mais sobre nós</span> </button>
+            <div class="notTog">
+              <div class="conteudo">
+                <h2>Sobre a nossa ONG</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, pariatur eaque! Quam laudantium repellat itaque natus unde maxime ratione aperiam ipsum cum repellendus aspernatur pariatur alias totam accusantium, odit hic!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus porro esse cumque eius officiis tempore numquam cupiditate! Provident incidunt iste aperiam culpa? Atque incidunt sunt, quos rem repellat facere numquam.</p>
+                <button onclick="togSob()"><i class="ph-bold ph-plus"></i> <span>Saiba mais sobre nós</span> </button>
+              </div>
+                <img src="./assets/coruja-ravena.png" alt="curuja">
             </div>
-              <img src="./assets/coruja-ravena.png" alt="curuja">
+            <div id="togSob" class="styleNone ">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum reprehenderit nostrum placeat delectus! Mollitia maxime officiis, neque asperiores possimus dolorum eligendi facilis saepe molestiae laboriosam, unde cumque enim, odio odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, itaque. Nulla possimus quam maiores, eveniet repellendus nemo perferendis temporibus quibusdam, enim dicta est corporis veniam aliquam iure cupiditate commodi omnis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestiae voluptates porro reprehenderit amet officiis temporibus omnis ex optio, alias est consectetur eius! Enim veniam suscipit, quidem repudiandae delectus rem?
+            </div>
         </div>
         <div id="historia">
-          <iframe class="video" src="https://www.youtube.com/embed/Oro57FOI4ZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <div class="conteudo">
-            <h2>História da nossa ONG</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ea atque inventore, exercitationem neque ullam quidem quibusdam natus quos! Aut, harum? Aliquam rerum dignissimos cupiditate quo quas explicabo veritatis quibusdam?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima non quo amet vero, eos recusandae delectus. Et, similique totam obcaecati optio, qui suscipit ut ipsum quo placeat, provident deleniti molestias?</p>
-            <button onclick="togHis()" ><i class="ph-bold ph-plus"></i> <span>Saiba mais sobre nossa história</span></button>
+          <div class="notTog">
+            <iframe class="video" src="https://www.youtube.com/embed/Oro57FOI4ZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="conteudo">
+              <h2>História da nossa ONG</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ea atque inventore, exercitationem neque ullam quidem quibusdam natus quos! Aut, harum? Aliquam rerum dignissimos cupiditate quo quas explicabo veritatis quibusdam?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima non quo amet vero, eos recusandae delectus. Et, similique totam obcaecati optio, qui suscipit ut ipsum quo placeat, provident deleniti molestias?</p>
+              <button onclick="togHis()" ><i class="ph-bold ph-plus"></i> <span>Saiba mais sobre nossa história</span></button>
+            </div>
           </div>
           <div id="togHis" class="styleNone ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequatur repellat quis tempora nihil pariatur iusto asperiores vero dolorem doloribus repellendus nisi quae incidunt, ea placeat quibusdam numquam unde error? teste Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sint vero culpa maxime eos voluptas ut aliquam laudantium cumque. Maxime quidem laboriosam voluptatum suscipit tenetur error reiciendis? Nam, autem provident? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta architecto exercitationem nostrum minus cum molestiae nesciunt quaerat nemo, nobis ratione nihil deserunt, placeat repellat incidunt enim sunt rem, explicabo illo? ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque accusamus vitae, nesciunt, velit consequuntur at asperiores culpa in reprehenderit vero minima libero perspiciatis. Eius debitis voluptates fugit rerum velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem amet porro odit. Sapiente inventore sint veritatis alias mollitia laboriosam hic enim nisi! Sunt nemo animi quod ut, laborum iusto nam?
@@ -105,15 +112,17 @@
               <h3>Opção 8</h3>
             </div>
           </div>
-          <button class="button"><i class="ph-bold ph-plus"></i> <span>Mais de nossos projetos</span></button>
+          <button class="button" onclick="redirecionarProjetos()"><i class="ph-bold ph-plus"></i> <span>Mais de nossos projetos</span></button>
         </div>
         <div id="loja">
-          <img src="https://static.wixstatic.com/media/ee2410_5dd4ddbf600f41d2b6a6fc5d4ce2af91~mv2.png/v1/crop/x_304,y_317,w_2332,h_1424/fill/w_560,h_380,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fundo%20produtos%20site-01%20sem%20fundo.png" alt="produtos da loja ICAMA">
+          <div class="notTog">
+            <img src="https://static.wixstatic.com/media/ee2410_5dd4ddbf600f41d2b6a6fc5d4ce2af91~mv2.png/v1/crop/x_304,y_317,w_2332,h_1424/fill/w_560,h_380,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fundo%20produtos%20site-01%20sem%20fundo.png" alt="produtos da loja ICAMA">
           <div class="conteudo">
             <h2>Conheça nossa loja!</h2>
             <p>Compre produtos da ICAMA e ajude nossa ONG crescer!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nesciunt pariatur earum alias quam sunt inventore, aspernatur mollitia, saepe vero dolore sint. Omnis error modi voluptatum ad vitae provident aliquam.</p>
             <button class="button" onclick="redirecionarLoja()"><i class="ph-bold ph-plus"></i> <span>Conheça nossos produtos</span></button>
+          </div>
           </div>
         </div>
         <div id="equipe">
@@ -146,8 +155,9 @@
           <span><a href="https://www.instagram.com/icama_org/" target="_blank"><i class="ph ph-instagram-logo"></i> @icama-org</a></span>
           <span><a href="mailto:icama.org@gmail.com"><i class="ph ph-envelope"></i> icama.org@gmail.com</a></span>
         </div>
-        <span>Website criado pelos alunos de ADS em conjunto dos alunos de GA da <a href="https://fatecitapetininga.edu.br/" target="_blank">Fatec Itapetininga</a>.</span>
+        <span>Feito pelos alunos de ADS em conjunto com os de GA da <a href="https://fatecitapetininga.edu.br/" target="_blank">Fatec Itapetininga</a>.</span>
         <button><i class="ph-bold ph-info"></i> Doe aqui!</button>
+        <div class="space"></div>
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
