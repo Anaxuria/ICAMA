@@ -100,7 +100,7 @@ body {
 nav {
     display: flex;
     gap: 30px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     justify-content: center;
     align-items: center;
 }
@@ -119,7 +119,7 @@ nav a:hover {
 }
 
 nav button {
-    padding: 12px 15px;
+    padding: 10px 15px;
     background: #ebffe6;
     font-weight: bold;
     color: #219d5c;
@@ -128,14 +128,14 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     gap: 5px;
     
     transition: 0.2s;
 }
 
 nav button i {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 nav button:hover {
