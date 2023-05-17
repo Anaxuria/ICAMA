@@ -63,3 +63,22 @@ function redirecionarLoja() {
 function redirecionarEquipe() {
   window.location.href = "pages/equipe.html";
 }
+
+//toggles
+
+function togHis() {
+  var element = document.getElementById("togHis");
+
+  element.classList.toggle("styleHis");
+  element.classList.toggle("styleNone");
+}
+
+//const togHis = document.querySelector("#togHis");
+//const classes = togHis.classList;
+
+//togHis.addEventListener("click", () => {
+//  const result = classes.toggle("styleHis");
+//  togHis.textContent = `'styleHis' ${
+//    result ? "added" : "removed"
+//  }; classList is now "${classes}".`;
+//});
